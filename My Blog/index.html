@@ -1,0 +1,49 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles/style.css">
+  <title>MyBlog</title>
+</head>
+
+<body>
+
+  <div id="main"></div>
+
+  <!-- Libraries -->
+  <script src="./node_modules/jquery/dist/jquery.js"></script>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="./node_modules/handlebars/dist/handlebars.js"></script>
+  <script src="./node_modules/sammy/lib/sammy.js"></script>
+  <script src="./node_modules/sammy/lib/plugins/sammy.handlebars.js"></script>
+
+  <!-- API -->
+  <script type="module" src="./scripts/app.js"></script>
+
+  <!-- From Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-app.js"></script>
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyC5ewAMlNBU3iKWqsHN_0dj9ZOcI3Cq8Ik",
+      authDomain: "myblog-248a4.firebaseapp.com",
+      databaseURL: "https://myblog-248a4.firebaseio.com",
+      projectId: "myblog-248a4",
+      storageBucket: "myblog-248a4.appspot.com",
+      messagingSenderId: "526955000511",
+      appId: "1:526955000511:web:564683f851d8a025f44c0a"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+
+  <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-firestore.js"></script>
+
+
+</body>
+
+
+</html>

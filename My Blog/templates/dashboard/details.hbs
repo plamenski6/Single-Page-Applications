@@ -1,0 +1,14 @@
+{{> header}}
+<!-- Details -->
+<section class="details">
+    <div class="detail">
+        <h1>Title: {{post.title}}</h1>
+        <h2>Category: {{post.category}}</h2>
+        <h3>Content: {{post.content}}</h3>
+        <a href="#/home2">Back to Home</a>
+        {{#if isCreator}}
+        <a href="#/delete/{{post.id}}" id="delete-button">Delete</a>
+        <a href="#/edit/{{post.id}}" id="edit-button">Edit</a>
+        {{/if}}
+    </div>
+</section>
