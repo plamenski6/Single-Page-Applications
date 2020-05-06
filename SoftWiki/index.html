@@ -1,0 +1,47 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css" />
+  <title>SoftWiki</title>
+</head>
+
+<body>
+
+  <div id="main"></div>
+
+  <!-- Libraries -->
+  <script src="./node_modules/jquery/dist/jquery.js"></script>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="node_modules/handlebars/dist/handlebars.js"></script>
+  <script src="node_modules/sammy/lib/sammy.js"></script>
+  <script src="./node_modules/sammy/lib/plugins/sammy.handlebars.js"></script>
+
+  <!-- API -->
+  <script type="module" src="./scripts/app.js"></script>
+
+  <!-- From Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-app.js"></script>
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyCcx1h4yNMC4Nu-AyWKUj8G0aRSeG7txWo",
+      authDomain: "softwiki-89785.firebaseapp.com",
+      databaseURL: "https://softwiki-89785.firebaseio.com",
+      projectId: "softwiki-89785",
+      storageBucket: "softwiki-89785.appspot.com",
+      messagingSenderId: "898989341216",
+      appId: "1:898989341216:web:1dbda51125b047ae71da45"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+
+  <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-firestore.js"></script>
+
+</body>
+
+
+</html>
